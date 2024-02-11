@@ -8,6 +8,8 @@ echo App version $APP_VERSION Chart version $CHART_VERSION ;
 echo need below two commands to check the app versions and chart versions
 echo helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 echo helm repo update
+echo helm search repo ingress-nginx --versions
+
 
 mkdir -p ./kubernetes/ingress/controller/nginx/manifests/
 
